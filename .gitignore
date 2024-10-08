@@ -2,3 +2,7 @@ primemain
 *.o
 
 *~
+switcher++
+switcher--
+switchcond++  
+switchcond--  
