@@ -14,7 +14,7 @@ int tria(int n) {
 */
 
 int main(int argc, char **argv) {
-    for(int i = 0; i <= 6; i++)
+    for(int i = 1; i <= 6; i++)
         printf("%d  %d\n", i, tria(i));
     return 0;
 }
