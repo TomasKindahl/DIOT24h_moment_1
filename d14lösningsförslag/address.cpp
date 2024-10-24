@@ -2,18 +2,21 @@
 #include <stdio.h>
 #include <string.h>
 
+#include <string>
+#include <iostream>
+
 class address {
    public:
-     char name[40];
-     char phone[40];
+     std::string name;
+     std::string phone;
      address() { }
-     address(char Name[], char Phone[]) {
-         strcpy(name, Name);
-         strcpy(phone, Phone);
+     address(std::string Name, std::string Phone) {
+         name = Name;
+         phone = Phone;
      }
      void print() {
-         printf("%s ", name);
-         printf("%s\n", phone);
+         std::cout << name << std::endl;
+         std::cout << phone << std::endl;
      }
 };
 
