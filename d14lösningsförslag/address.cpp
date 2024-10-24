@@ -6,6 +6,11 @@ class address {
    public:
      char name[40];
      char phone[40];
+     address() { }
+     address(char Name[], char Phone[]) {
+         strcpy(name, Name);
+         strcpy(phone, Phone);
+     }
      void print() {
          printf("%s ", name);
          printf("%s\n", phone);
@@ -13,13 +18,9 @@ class address {
 };
 
 int main(int argc, char **argv) {
-    address Arne;
-    address Berith;
-    strcpy(Arne.name, "Arne Svensson");
-    strcpy(Arne.phone, "013-131313");
+    address Arne("Arne Svensson", "013-131313");
+    address Berith("Berith Qvist", "0616-616 616");
     Arne.print();
-    strcpy(Berith.name, "Berith Qvist");
-    strcpy(Berith.phone, "0616-616 616");
     Berith.print();
     return 0;
 }
