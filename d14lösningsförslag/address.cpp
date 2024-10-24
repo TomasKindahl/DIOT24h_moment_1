@@ -1,22 +1,22 @@
 #include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
 #include <string>
 #include <iostream>
 
+using namespace std;
+
 class address {
    public:
-     std::string name;
-     std::string phone;
+     string name;
+     string phone;
      address() { }
-     address(std::string Name, std::string Phone) {
+     address(string Name, string Phone) {
          name = Name;
          phone = Phone;
      }
      void print() {
-         std::cout << name << std::endl;
-         std::cout << phone << std::endl;
+         cout << name << endl;
+         cout << phone << endl;
      }
 };
 
