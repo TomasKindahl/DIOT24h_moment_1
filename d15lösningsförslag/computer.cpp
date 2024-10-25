@@ -39,6 +39,38 @@ class laptop {
      }
 };
 
+class embedded {
+   private:
+     string brand;
+     string series;
+     string product;
+     string mcu;
+     string usb;
+     double power;
+   public:
+   	 embedded() { }
+   	 embedded(string Brand, string Series, string Product) {
+   	 	 brand = Brand; series = Series; product = Product;
+   	 }
+   	 void setMCU(string MCU) {
+   	 	 mcu = MCU;
+   	 }
+   	 void setUSB(string USB) {
+   	 	 usb = USB;
+   	 }
+   	 void setPower(double Power) {
+   	 	 power = Power;
+   	 }
+   	 void print() {
+   	 	 cout << "Brand: " << brand << endl;
+   	 	 cout << "  Series: " << series << endl;
+   	 	 cout << "  Product: " << product << endl;
+   	 	 cout << "  MCU: " << mcu << endl;
+   	 	 cout << "  USB: " << usb << endl;
+   	 	 cout << "  Power: " << power << "V" << endl;
+     }
+};
+
 int main(int argc, char **argv) {
 	laptop PC[2];
 	PC[0] = laptop("Lenovo"s, "Essential"s, "G470"s);
@@ -53,5 +85,17 @@ int main(int argc, char **argv) {
 	PC[1].setStorage(256);
 	for(int i = 0; i < 2; i++) 
 		PC[i].print();
+
+	embedded Card[2];
+	Card[0] = embedded("Arduino"s, "Uno"s, "R4 Wifi"s);
+	Card[0].setMCU("Renesas RA4M1 (Arm® Cortex®-M4)"s);
+	Card[0].setUSB("USB-C"s);
+	Card[0].setPower(5);
+	Card[1] = embedded("Arduino"s, "MKR"s, "WiFi 1010"s);
+	Card[1].setMCU("SAMD21 Cortex®-M0+ 32bit low power ARM®"s);
+	Card[1].setUSB("USB Cable Type A Male to Micro Type B Male"s);
+	Card[1].setPower(5);
+	for(int i = 0; i < 2; i++) 
+		Card[i].print();
     return 0;
 }
