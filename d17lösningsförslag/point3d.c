@@ -12,5 +12,5 @@ point3D *new_point3D(double x, double y, double z) {
 }
 
 void point3D_print(point3D *P) {
-    printf("<%g, %g, %g>\n", P->x, P->y, P->z);
+    printf("<%g,%g,%g>\n", P->x, P->y, P->z);
 }
