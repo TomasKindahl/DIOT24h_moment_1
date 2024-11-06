@@ -26,24 +26,24 @@ int main(int argc, char **argv) {
     char buf[9];
     unsigned char GPIO_REG = 0b00000000;
     printf("GPIO_REG = %s\n", bin_to_str8(buf, GPIO_REG));
-    /* Uppgift 1:
+    /* Uppgift 23.2.1:
      *    sätt GPIO_1 PÅ med PULLUP-register AV */
 
     /* Utskrift ska bli 00000001 */
     printf("GPIO_REG = %s\n", bin_to_str8(buf, GPIO_REG));
-    /* Uppgift 2:
+    /* Uppgift 23.2.2:
      *    sätt GPIO_2 PÅ med PULLUP-register PÅ */
 
     /* Utskrift ska bli 00001101 */
     printf("GPIO_REG = %s\n", bin_to_str8(buf, GPIO_REG));
-    /* Uppgift 3:
+    /* Uppgift 23.2.3:
      *    sätt GPIO_3 PÅ med PULLUP-register AV och PWM_HI resolution PÅ */
 
     /* Utskrift ska bli 01011101 */
     printf("GPIO_REG = %s\n", bin_to_str8(buf, GPIO_REG));
 
     GPIO_REG = 0b00000000; /* NOLLSTÄLLER */ 
-    /* Uppgift 4:
+    /* Uppgift 23.2.4:
      *    sätt GPIO_3 exakt som ovan, men med endast TVÅ programrader */
 
     /* Utskrift ska bli 01011101 */
