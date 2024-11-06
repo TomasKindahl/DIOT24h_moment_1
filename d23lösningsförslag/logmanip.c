@@ -18,7 +18,7 @@ unsigned char bit(unsigned char B, int n) {
     return 0; /* FIXME!! */
 }
 
-unsigned char set(unsigned char B, int n) {
+unsigned char set_bit(unsigned char B, int n) {
     return 0; /* FIXME!! */
 }
 
@@ -26,11 +26,11 @@ unsigned char inv(unsigned char B) {
     return 0; /* FIXME!! */
 }
 
-unsigned char clear(unsigned char B, int n) {
+unsigned char clear_bit(unsigned char B, int n) {
     return 0; /* FIXME!! */
 }
 
-unsigned char flip(unsigned char B, int n) {
+unsigned char flip_bit(unsigned char B, int n) {
     return 0; /* FIXME!! */
 }
 
