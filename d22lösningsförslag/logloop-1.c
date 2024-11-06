@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
             printf("  %s ^ %s == %s\n",
                    bin_to_str8(buf1, b1),
                    bin_to_str8(buf2, b2),
-                   bin_to_str8(buf1, b1^b2));
+                   bin_to_str8(buf3, b1^b2));
         }
     } while(1);
     return 0;
