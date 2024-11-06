@@ -5,9 +5,7 @@
 
 char *bin_to_str8(char* buf, char B);
 
-bool is_bit_3_set(char val) {
-    return (val & 0x4) != 0;
-}
+bool is_bit_3_set(char val);
 
 int main() {
     char word[100];
@@ -26,8 +24,6 @@ int main() {
     }
     while(true);
 }
-
-
 
 /* TITTA UPP, INTE NER! */
 
